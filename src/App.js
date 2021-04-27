@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/Header/Header.js';
 import Landing from './components/Landing/Landing.js';
 import Input from './components/Input/Input.js';
@@ -9,10 +8,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Landing />
-      <Input />
-      <Main />
-      <Footer />
+
+      {
+        /*
+        <Landing />
+        <Input />
+        <Main />
+        <Footer />
+        */
+      }
     </div>
   );
 }
