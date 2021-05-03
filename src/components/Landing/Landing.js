@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Landing.css';
+import Illustration from '../../images/illustration-working.svg';
+
 
 function Main() {
     return (
-        <div>
+        <div className="landing">
+
+            <img src={Illustration} alt="" />
+
             <h1>
                 More than just shorter links
             </h1>

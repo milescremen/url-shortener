@@ -1,0 +1,40 @@
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em;
+}
+
+.landing > img {
+    min-width: 120vw;
+}
+
+.landing > h1 {
+    text-align: center;
+    line-height: 2.5rem;
+    color: var(--clr-neutral-800);
+    padding-top: 1em;
+}
+
+.landing > p {
+    color: var(--clr-neutral-400);
+    padding: 1em;
+}
+
+.landing button {
+    color: white;
+    background-color: var(--clr-primary-400);
+
+    font-weight: var(--fw-bold);
+    font-size: 1.125rem;
+
+
+    padding: 0.75em 2.5em;
+    margin: 0 auto;
+
+    border-radius: 999em;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}

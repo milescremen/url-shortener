@@ -9,9 +9,11 @@ function App() {
     <div className="App">
       <Header />
 
+      <Landing />
+      <Input />
+
       {
         /*
-        <Landing />
         <Input />
         <Main />
         <Footer />
