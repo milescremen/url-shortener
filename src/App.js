@@ -12,14 +12,8 @@ function App() {
       <Landing />
       <Input />
       <Main />
+      <Footer />
 
-      {
-        /*
-        <Input />
-        <Main />
-        <Footer />
-        */
-      }
     </div>
   );
 }
