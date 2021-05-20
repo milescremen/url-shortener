@@ -1,0 +1,46 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: var(--clr-primary-800);
+    padding: 1em;
+
+    margin: 0 1.125em;
+
+    border-radius: 0.5em;
+}
+
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-weight: var(--fw-bold);
+
+    padding: 1em;
+}
+
+.navigation a:visited {
+    color: #ffffff;
+}
+
+.navigation button {
+    background-color: var(--clr-primary-400);
+    color: white;
+
+    border: none;
+    
+    padding: 1em;
+    width: 90%;
+
+    border-radius: 99em;
+
+    font-weight: var(--fw-bold);
+}
+
+.navigation hr {
+    width: 100%;
+    color: hsl(300, 9%, 50%);
+}

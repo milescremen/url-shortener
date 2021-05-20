@@ -1,0 +1,54 @@
+.input-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    margin: 2em 2em;
+
+   
+    background-color: hsl(0, 0%, 100%);
+
+    border-radius: 0.5em;
+}
+
+
+.input-card button {
+    padding: 0.75em 1em;
+    color: hsl(0, 0%, 100%);
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-primary-400);
+
+    border: none;
+    border-radius: 0.5em;
+
+    margin: 1em;
+}
+
+.orig-link {
+    border-bottom: solid hsl(0, 0%, 85%) 1px;
+    padding: 0.5em 0.75em;
+}
+
+.shortend-link {
+    padding: 0.5em 0.75em 0 0.75em;
+}
+
+.orig-link a {
+    text-decoration: none;
+}
+
+.orig-link a:visited {
+    text-decoration: none;
+}
+
+.shortend-link a {
+    color: var(--clr-primary-400);
+    text-decoration: none;
+}
+
+.shortend-link a:visited {
+    color: var(--clr-primary-400);
+    text-decoration: none;
+}
+
+

@@ -2,7 +2,7 @@
 .landing {
     display: flex;
     flex-direction: column;
-    padding: 0em 1em;
+    padding: 1em 1em;
 }
 
 .landing > img {

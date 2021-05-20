@@ -1,3 +1,9 @@
+.input-container {
+    background-color: hsl(0, 0%, 95%);
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 
 .input {
     display: flex;
@@ -5,7 +11,7 @@
 
     background-color: var(--clr-primary-800);
 
-    margin: 4em 2em;
+    margin: 0em 2em;
     padding: 1.5em;
 
     border-radius: 0.5em;
@@ -35,5 +41,4 @@
     border: none;
     border-radius: 0.5em; 
     cursor: pointer;
-
 }
