@@ -30,7 +30,7 @@ function Header() {
                 }
             </div>
 
-            { toggleNav && <Navigation />  }
+            { toggleNav && <Navigation /> }
         </div>
     )
 }

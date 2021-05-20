@@ -1,8 +1,14 @@
 import React from 'react';
 import './Input.css';
-import InputCard from '../InputCard/InputCard.js';
+import LinkCard from '../LinkCard/LinkCard.js';
 
 function Input() {
+
+    let links = [
+            { id: 1, origLink: 'www.facebook.com', shortLink: "hehe" }, 
+            { id: 2, origLink: 'www.google.com', shortLink: "test"}
+        ];
+
     return (
         <div className="input-container">
             <div className="input">
@@ -11,12 +17,9 @@ function Input() {
                 <button>    
                     Shorten It!
                 </button>
-
-
             </div>
 
-            <InputCard />
-            <InputCard />
+            { links.map(link => (<LinkCard key={link.id} link={link} />))}
         </div>
     )
 }
