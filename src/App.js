@@ -1,5 +1,4 @@
 import Header from './components/Header/Header.js';
-import Navigation from './components/Navigation/Navigation.js';
 import Landing from './components/Landing/Landing.js';
 import Input from './components/Input/Input.js';
 import Main from './components/Main/Main.js';
@@ -10,7 +9,6 @@ function App() {
     <div className="App">
       <Header />
 
-      <Navigation />
 
       <Landing />
       <Input />
