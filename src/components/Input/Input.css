@@ -42,3 +42,15 @@
     border-radius: 0.5em; 
     cursor: pointer;
 }
+
+.input .error {
+    color: rgb(237, 80, 80);
+    font-size: 0.75rem;
+    margin-bottom: 0.25em;
+}
+
+.input .success {
+    color: rgb(69, 151, 55);
+    font-size: 0.75rem;
+    margin-bottom: 0.25em;
+}

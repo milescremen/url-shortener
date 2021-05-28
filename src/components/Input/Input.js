@@ -11,37 +11,58 @@ function Input() {
 
     const [text, setText] = useState('');
     const [links, setLinks] = useState(linksList);
+    const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
 
     const addLink = async (e) => {
         e.preventDefault();
 
-        try {
-            const url = text;
-            setText('');
-            
-            const res = await axios.get(`https://api.shrtco.de/v2/shorten?url=${url}`);
+        if(text === '')
+        {
+            setError(true);
+        }
+        else
+        {
+            setError(false);
+            setSuccess(true);
 
-            const newLink = {
-                id: 1,
-                origLink: text,
-                shortLink: res.data.result.full_share_link
-            };
+            try {
+                const url = text;
+               
+                // Reset text state
+                setText('');
+                
+                const res = await axios.get(`https://api.shrtco.de/v2/shorten?url=${url}`);
 
-            setLinks([...links, newLink]);
-        } catch(err) {
-            console.error(err);
+                setSuccess(false);
+
+                const newLink = {
+                    id: 1,
+                    origLink: text,
+                    shortLink: res.data.result.full_share_link
+                };
+
+                setLinks([...links, newLink]);
+            } catch(err) {
+                console.error(err);
+            }
         }
     }
 
     return (
         <div className="input-container">
-            <div className="input">
-                <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
+            <form onSubmit={addLink}>
+                <div className="input">
+                    { error && <p className="error">Url field must not be empty...</p> }
+                    { success && !error && <p className="success">Url succesfully submitted, Please wait..</p> }
 
-                <button onClick={addLink}>    
-                    Shorten It!
-                </button>
-            </div>
+                    <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
+
+                    <button type="submit">    
+                        Shorten It!
+                    </button>
+                </div>
+            </form>
 
             { links.map(link => (<LinkCard key={link.id} link={link} />))}
         </div>
