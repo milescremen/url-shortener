@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import Logo from '../../images/logo.svg';
 import MenuIcon from '@material-ui/icons/Menu';
-import Navigation from '../Navigation/Navigation.js';
+import MobileNav from '../MobileNav/MobileNav.js';
 import './Header.css'
-
-
 
 function Header() {
 
@@ -13,24 +11,29 @@ function Header() {
     return (
         <div className="header-container">
             <div className="header">
-                <img src={Logo} alt="Shortly"/>
 
-                <MenuIcon onClick={() => { setToggleNav(!toggleNav)}} className="hamburger" fontSize="large"/>
+                <div className="mobile-nav">
+                    <img src={Logo} alt="Shortly"/>
+                    <MenuIcon onClick={() => { setToggleNav(!toggleNav)}} className="hamburger" fontSize="large"/>
+                </div>
 
-                {
-                    /*
-
-                    <a href="">Features</a>      
-                    <a href="">Pricing</a>      
-                    <a href="">Resources</a>      
-
-                    <button>Login</button>
-                    <button>Sign Up</button>
-                    */
-                }
+                <div className="desktop-nav">
+                    <div className="desktop-nav-links">
+                        <img src={Logo} alt="Shortly"/>
+                        <a href="/">Features</a>
+                        <a href="/">Pricing</a>
+                        <a href="/">Resources</a>
+                    </div>
+                    <div className="desktop-nav-btn">
+                        <a href="/">Login</a>
+                        <button className="signup-btn">Sign Up</button>
+                    </div>
+                </div>
             </div>
 
-            { toggleNav && <Navigation /> }
+            <div className="mobile-nav-active">
+                { !toggleNav && <MobileNav /> }
+            </div>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navigation.css';
+import './MobileNav.css';
 
-function Navigation() {
+function MobileNav() {
     return (
         <div className="navigation">
             <a href="/">Features</a>
@@ -14,4 +14,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default MobileNav

@@ -5,9 +5,7 @@ const axios = require('axios').default;
 
 function Input() {
 
-    const linksList = [
-            
-        ];
+    const linksList = [];
 
     const [text, setText] = useState('');
     const [links, setLinks] = useState(linksList);
@@ -36,10 +34,12 @@ function Input() {
 
                 setSuccess(false);
 
+                console.log(res.data);
+
                 const newLink = {
                     id: 1,
                     origLink: text,
-                    shortLink: res.data.result.full_share_link
+                    shortLink: res.data.result.short_link
                 };
 
                 setLinks([...links, newLink]);
@@ -54,7 +54,7 @@ function Input() {
             <form onSubmit={addLink}>
                 <div className="input">
                     { error && <p className="error">Url field must not be empty...</p> }
-                    { success && !error && <p className="success">Url succesfully submitted, Please wait..</p> }
+                    { success && !error && <p className="success">Url succesfully submitted, please wait..</p> }
 
                     <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
 
