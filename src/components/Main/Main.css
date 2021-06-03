@@ -10,7 +10,6 @@
     align-content: center;
 }
 
-
 .main-heading h2 {
     font-size: 1.5rem;
     
@@ -52,5 +51,12 @@
     outline: none;
 
     cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+    .main-content {
+        display: flex;
+        justify-content: center;
+    }
 }
 

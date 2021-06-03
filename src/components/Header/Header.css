@@ -15,9 +15,9 @@
     cursor: pointer;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 650px) {
     .header {
-        margin: 2.5em 2.5em;
+        margin: 2.5em 5em;
         padding: 0;
     } 
     
@@ -38,6 +38,10 @@
     .desktop-nav-links {
         display: flex;
         align-items: center;
+    }
+
+    .desktop-nav-links img {
+        margin-right: 1em;
     }
 
     .desktop-nav a {
@@ -71,6 +75,3 @@
     }
 }
 
-
-@media only screen and (min-width: 1500px) {
-}

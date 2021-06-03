@@ -53,14 +53,16 @@ function Input() {
         <div className="input-container">
             <form onSubmit={addLink}>
                 <div className="input">
-                    { error && <p className="error">Url field must not be empty...</p> }
-                    { success && !error && <p className="success">Url succesfully submitted, please wait..</p> }
 
                     <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
 
                     <button type="submit">    
                         Shorten It!
                     </button>
+
+
+                    { error && <p className="error">Url field must not be empty...</p> }
+                    { success && !error && <p className="success">Url succesfully submitted, please wait..</p> }
                 </div>
             </form>
 

@@ -42,13 +42,13 @@
     cursor: pointer;
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 650px) {
     .landing {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
 
-        margin: 2.5em;
+        margin: 2.5em 5em;
     }
 
     .landing > img {
@@ -60,7 +60,7 @@
     .landing-body > h1 {
         font-size: 4rem;
         line-height: 1.125em;
-        max-width: 19ch;
+        max-width: 30ch;
         text-align: left;
     }
 
