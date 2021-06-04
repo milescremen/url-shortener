@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+.input-desktop {
+    display: flex;
+    flex-direction: column;
+}
+
 .input {
     display: flex;
     flex-direction: column;
@@ -51,22 +56,31 @@
     cursor: pointer;
 }
 
-.input .error {
-    color: rgb(237, 80, 80);
+.message {
     font-size: 0.75rem;
     margin-top: 1em;
+    margin-bottom: -1em;
+    font-style: italic;
+}
+
+.input .error {
+    color: rgb(237, 80, 80);
 }
 
 .input .success {
     color: rgb(116, 232, 96);
-    font-size: 0.75rem;
-    margin-top: 1em;
 }
 
 @media only screen and (min-width: 650px) {
     .input {
         margin: 1em 4em;
         padding: 2.5em;
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .input-desktop {
         display: flex;
         flex-direction: row;
     }

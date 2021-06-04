@@ -52,17 +52,18 @@ function Input() {
     return (
         <div className="input-container">
             <form onSubmit={addLink}>
-                <div className="input">
+                    <div className="input">
 
-                    <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
+                        <div className="input-desktop">
+                            <input type="text" value={text} onChange={(e) => {setText(e.target.value)}} placeholder="Shorten a link here..."/> 
 
-                    <button type="submit">    
-                        Shorten It!
-                    </button>
+                            <button type="submit">    
+                                Shorten It!
+                            </button>
+                        </div>
 
-
-                    { error && <p className="error">Url field must not be empty...</p> }
-                    { success && !error && <p className="success">Url succesfully submitted, please wait..</p> }
+                        { error && <p className="error message">Url field must not be empty...</p> }
+                        { success && !error && <p className="success message">Url succesfully submitted, please wait..</p> }
                 </div>
             </form>
 
