@@ -21,6 +21,9 @@
     flex-direction: column;
 
     background-color: var(--clr-primary-800);
+    background-image: url('../../images/bg-shorten-mobile.svg');
+    
+
 
     margin: 0em 2em;
     padding: 1.5em;
@@ -28,6 +31,8 @@
     border-radius: 0.5em;
 
     min-width: 80vw;
+
+
 }
 
 .input input {
@@ -54,6 +59,10 @@
     border: none;
     border-radius: 0.5em; 
     cursor: pointer;
+}
+
+.input button:active {
+    background-color: hsl(180, 66%, 49%, 40%);
 }
 
 .message {
@@ -99,5 +108,7 @@
 @media only screen and (min-width: 1050px) {
     .input {
         min-width: 60vw;
+
+        background-image: url('../../images/bg-shorten-desktop.svg');
     }
 }

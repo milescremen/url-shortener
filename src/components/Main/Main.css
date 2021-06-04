@@ -28,10 +28,12 @@
 
 .main-ending {
     text-align: center;
-    padding: 5em 0;
+    padding: 4em 0;
 
     background-color: var(--clr-primary-800);
     color: hsl(0, 0%, 100%);
+
+    background-image: url('../../images/bg-boost-mobile.svg');
 }
 
 
@@ -53,10 +55,18 @@
     cursor: pointer;
 }
 
+.main-ending button:active {
+    background-color: hsl(180, 66%, 49%, 40%);
+}
+
 @media only screen and (min-width: 650px) {
     .main-content {
         display: flex;
         justify-content: center;
+    }
+
+    .main-ending {
+        background-image: url('../../images/bg-boost-desktop.svg');
     }
 }
 

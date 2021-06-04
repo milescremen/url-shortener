@@ -42,6 +42,11 @@
     cursor: pointer;
 }
 
+.landing button:active {
+    background-color: hsl(180, 66%, 49%, 40%);
+}
+
+
 @media only screen and (min-width: 650px) {
     .landing {
         flex-direction: row-reverse;

@@ -31,6 +31,7 @@
     margin-top: 0.25em;
 }
 
+
 .link-group a:visited {
     color: var(--clr-neutral-300);
 }
@@ -43,6 +44,10 @@
 .social-icons img {
     padding: 0.5em;
     cursor: pointer;
+}
+
+.link-group a:hover {
+    color: var(--clr-primary-400);
 }
 
 
