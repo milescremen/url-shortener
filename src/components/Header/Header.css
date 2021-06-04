@@ -9,12 +9,10 @@
 }
 
 .header {
-
     margin: 2em 2em;
 }
 
 .hamburger {
-
     color: var(--clr-neutral-400);
     cursor: pointer;
 }
@@ -50,11 +48,16 @@
 
     .desktop-nav a {
         text-decoration: none;
+        color: var(--clr-primary-800);
     }
 
     .desktop-nav a:visited {
         text-decoration: none;
         color: var(--clr-primary-800);
+    }
+
+    .desktop-nav a:hover {
+        color: var(--clr-neutral-900);
     }
 
     .desktop-nav-links a {
@@ -76,6 +79,10 @@
         cursor: pointer;
         padding: 1em 2em;
         border-radius: 99em;
+    }
+
+    .signup-btn:active {
+        background-color: hsl(180, 66%, 49%, 40%);
     }
 }
 
