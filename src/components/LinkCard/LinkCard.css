@@ -31,6 +31,11 @@
     padding: 0.5em 0.75em;
 }
 
+.orig-link a:visited {
+    text-decoration: none;
+    color: var(--clr-neutral-800)hsl(0, 0%, 0%);
+}
+
 .short-link {
     padding: 0.5em 0.75em 0 0.75em;
 }
@@ -51,6 +56,22 @@
 .short-link a:visited {
     color: var(--clr-primary-400);
     text-decoration: none;
+}
+
+
+@media only screen and (min-width: 650px) {
+    .link-card {
+        min-width: 60vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .orig-link {
+        border-bottom: none;
+        margin-left: 1em;
+        flex: 1;
+    }
 }
 
 

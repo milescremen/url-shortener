@@ -2,15 +2,19 @@
     display: none;
 }
 
-.header {
+.mobile-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header {
 
     margin: 2em 2em;
 }
 
-
 .hamburger {
+
     color: var(--clr-neutral-400);
     cursor: pointer;
 }
